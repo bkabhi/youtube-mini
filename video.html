@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        body{
+            font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+            /* margin: 0 auto; */
+            overflow-x: hidden;
+            background-color: #181818;
+            color: #fff;
+        }
+        h3 {
+            font-size: 1.17em;
+            font-weight: bold;
+        }
+        #video{
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+        #video div{
+            /* margin: auto; */
+            /* border: 1px solid rgb(255, 255, 255); */
+        }
+        #videoLeft{
+            width: 853px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        /* #videoRight{
+            width: 30%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="video">
+        <div id="videoLeft">
+            <iframe width="853" height="480" id="videoIframe" src="https://www.youtube.com/embed/Vg67cXQG2fg" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+            <h3 id="title">Video Title</h3>
+            <h5 id="channel">channel</h5>
+        </div>
+        <div id="videoRight"></div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var video = JSON.parse(localStorage.getItem("video"));
+    // console.log(video.id.videoId || video.id);
+    document.getElementById("videoIframe").src = `https://www.youtube.com/embed/${video.id.videoId || video.id}`
+    document.getElementById("title").innerText = video.snippet.title
+    document.getElementById("channel").innerText = video.snippet.channelTitle
+</script>
