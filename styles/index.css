@@ -1,0 +1,83 @@
+#parentShowData{
+    border: 1px solid rgb(0, 0, 0);
+}
+#showData{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    margin: auto;
+    gap: 1rem;
+}
+#showData > div {
+    margin: auto;
+    width: 305px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#showData > div>img{
+    width: 307px;
+    margin: auto;
+    cursor: pointer;
+}
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+#sortArea{
+    width: 90%;
+    margin: auto;
+    margin-top: 90px;
+    color: white;
+}
+#sortArea div {
+    width: 120px;
+    font-size: 20px;
+}
+#sortClickDiv{
+    cursor: pointer;
+}
+yt-icon, .yt-icon-container.yt-icon {
+    width: var(--iron-icon-width,24px);
+    height: var(--iron-icon-height,24px);
+    
+}
+.ytd-toggle-button-renderer.style-text{
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+#sortArea #divSortOption{
+    width: 100%;
+    display: none;
+    margin: auto;
+}
+#divSortOption div{
+    width: 30%;
+    margin-left: 0px;
+    padding-right: 150px;
+    padding-left: 0px;
+}
+#divSortOption div li{
+    list-style: none;
+    margin: 15px;
+    margin-left: 0px;
+}
+#divSortOption div h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+#divSortOption div li a{
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+}
+#divSortOption{
+    display: none;
+}

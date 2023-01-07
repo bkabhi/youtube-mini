@@ -1,0 +1,23 @@
+body {
+    font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+    overflow-x: hidden;
+    background-color: #181818;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+#video {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+#videoLeft {
+    width: 853px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

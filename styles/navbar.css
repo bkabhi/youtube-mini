@@ -1,6 +1,5 @@
 body{
     font-family: "Roboto","Arial",sans-serif;
-    /* max-width: 100%; */
     margin: 0 auto;
     overflow-x: hidden;
     background-color: #181818;
@@ -10,58 +9,36 @@ a{
     text-decoration: none;
     color: white;
 }
-/* button{
+button{
     cursor: pointer;
-    padding: 6px;
-} */
-/* .navbar{
-    min-height: 80px;
-    background: #141b29;
-    border: 1px solid red;
-} */
+}
 .navberFixed{
-    /* border: 1px solid red; */
     width: 100vw;
     min-height: 80px;
     position: fixed;
-    /* top: 0; */
     background: #212121;
     background: transparen;
     color: white;
     margin: auto;
 }
 .navContainer{
-    /* border: 1px solid rgb(255, 255, 255); */
     width: 93vw;
     margin: auto;
-    /* background: #141b29; */
     min-height: 80px;
 }
 .navContainer {
-    /* padding: 0 50px; */
-    /* margin: 0 auto; */
-    /* margin-top: 6px;
-    min-height: 66px; */
     display: flex;
     align-items: center; 
 }
 .navContainer > div{
-    /* min-height: 66px; */
     width: 33vw;
-    /* border: 5px solid blue; */
-}
-.header .nav-container .search-container {
-    /* position: relative; */
-    /* z-index: 1; */
 }
 .search-container > .input-open {
     width: 360px;
 }
 .search-container > input {
-    /* position: relative; */
     width: 240px;
     height: 32px;
-    /* float: right; */
 }
 .search-container > input:focus {
     outline: none;
@@ -70,9 +47,7 @@ a{
 }
 #resultHolder{
     position: absolute;
-    /* width: 300px; */
     height: auto;
-    /* overflow: scroll; */
     transform: scale(0);
     margin-right: 15px;
 }
@@ -80,7 +55,6 @@ a{
 #resultHolder .result-holderDiv{
     height: 100px;
     width: 350px;
-    /* border-radius: 5px; */
     border: 5px solid rgb(65, 65, 65);
     background-color: rgb(32, 32, 32);
     color: white;
@@ -88,7 +62,6 @@ a{
 }
 #resultHolder > a>.result-holderDiv div p {
     font-size: 15px;
-    /* width: 300px; */
 }
 #resultHolder > a>.result-holderDiv div h2{
     font-size: 15px;
@@ -116,30 +89,26 @@ a{
     color: white;
     background-color: #141b29;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
     color: rgba(168, 168, 168, 0.8);
-    opacity: 1; /* Firefox */
+    opacity: 1;
     
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
     color: white;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
     color: white;
 }
 
 .search-container input {
-    /* position: relative; */
     width: 450px;
     height: 32px;
     border: none;
     border: 1px solid #414141;
-    /* color: var(--TEXT_COLOR_L2); */
     font-size: 16px;
-    /* outline: 0; */
-    /* padding: 0 28px 0 0px; */
     padding: 20px 28px 20px 28px;
     border-radius: 0;
     background: none;
@@ -160,8 +129,6 @@ a{
 }
 .searchIcon{
     padding: 9px 15px;
-    /* padding-right: 20px; */
-    /* // border: 1px solid gray; */
     background-color: hsla(0, 0%, 100%, 0.08);
     color: white;
 }
